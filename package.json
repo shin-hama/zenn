@@ -1,7 +1,7 @@
 {
   "license": "MIT",
   "dependencies": {
-    "zenn-cli": "^0.1.133"
+    "zenn-cli": "^0.1.140"
   },
   "scripts": {
     "start": "yarn run zenn preview",
