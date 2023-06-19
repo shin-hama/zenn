@@ -94,7 +94,7 @@ Supabase にて新規のプロジェクトを作成します。
 
 プロジェクト設定の Database Password だけは後で使うのでどこかに控えておいてください。
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c9fc6b5c-e848-4705-bf08-14e815269866/Untitled.png)
+![Create new project](/images/t3-stack-supabase/NewProject.png)
 
 作成が完了したら、アプリとの接続のセットアップを行います。
 
@@ -211,29 +211,29 @@ Supabase にはマネージドの Authentication 機能が存在するため、 
 
 `http://localhost:3000` にアクセスすると `create-t3-app` のデフォルトページが開きます。
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d9142ea0-3d3f-4eb1-a36b-3189fbf8f9d5/Untitled.png)
+![Top page of create t3 app](/images/t3-stack-supabase/T3AppTopPage.png)
 
 画面下部の Sign in ボタンを押すと設定した Provider の Sign in ボタンが表示されるはずです。
 
 今回は Discord を削除して Google を追加したので、 Google のボタンだけ表示されました。
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/69a52644-078a-47f5-8249-e16e95ad87ca/Untitled.png)
+![Sign in with google](/images/t3-stack-supabase/SignInWithGoogle.png)
 
 Sign in すると最初には表示されていなかったメッセージが表示されます。
 
 メッセージ内にログインしたアカウント名が表示されていれば無事成功です。
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/15a07e91-d666-4181-a600-b2721b42dc89/Untitled.png)
+![Top page of create t3 app](/images/t3-stack-supabase/T3AppTopWithAuth.png)
 
 Supabase の方も確認しましょう。
 
 Project Dashbord の Database を開くと Account と User テーブルにレコードが追加されているはずです。
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3b5c925a-bec2-4ead-aeb2-34653d3a53fb/Untitled.png)
+![database dashboard](/images/t3-stack-supabase/DatabaseDashboard.png)
 
 Tabel エディターから User テーブルを確認すると、ログインした Google アカウントの情報が追加されているはずです。
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/cf44e2f7-90ee-4594-bf18-c0c745897a64/Untitled.png)
+![database editor](/images/t3-stack-supabase/DatabaseUserTable.png)
 
 ※セキュリティアラートも出ていますが、今回はテスト用に作っただけなので無視しています。
 
