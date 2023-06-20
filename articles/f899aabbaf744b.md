@@ -1,18 +1,20 @@
 ---
-title: "T3 Stack + Supabase でお手軽に Web 開発を始める"
+title: "T3 Stack + Supabase なら認証機能と RDBMS を構成した Web アプリを簡単に作れる"
 emoji: "🦔"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: ["Nextjs", "Supabase", "NextAuth", "Prisma"]
-published: false
+topics: ["Nextjs", "NextAuth", "Prisma", "Supabase", "PostgreSQL"]
+published: true
 ---
 
 流行りの技術に乗っかってアプリを作ってみようと思い立ち T3 Stack + Supabase を使ってみました。
 
-とても使いやすい組み合わせで、これから新しいプロジェクトを立ち上げようとしている人にぜひともおすすめです。
-
-セットアップも非常に簡単でしたが、ドキュメントを行ったり来たりするのが意外と手間でしたので、一箇所にまとめたメモの残そうと想います。
+セットアップは非常に簡単でしたが、ドキュメントを行ったり来たりするのが意外と手間でしたので、一箇所にまとめたメモを残しました。
 
 これからプロジェクトを立ち上げようという方の参考になれば幸いです。
+
+自分が作ったサンプルは以下になりますので、合わせてご覧ください。
+
+https://github.com/shin-hama/t3-app-supabase-sample
 
 ## 用語解説
 
@@ -235,7 +237,10 @@ Tabel エディターから User テーブルを確認すると、ログイン�
 
 ![database editor](/images/t3-stack-supabase/DatabaseUserTable.png)
 
-※セキュリティアラートも出ていますが、今回はテスト用に作っただけなので無視しています。
+:::message
+セキュリティアラートも出ていますが、今回はテスト用に作っただけなので無視しています。
+実際に運用する場合は必ず確認してください。
+:::
 
 ## create-t3-app と Supabase で最高の開発体験を
 
